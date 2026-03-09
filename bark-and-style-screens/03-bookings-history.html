@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=1280"/>
+<title>Bark & Style — 03 Bookings History</title>
+<link rel="stylesheet" href="shared.css"/>
+</head>
+<body>
+<div class="app-layout">
+  <nav class="sidebar">
+    <div class="sidebar-brand"><div class="sidebar-brand-inner"><div class="brand-icon">🐾</div><div><h2>Bark <span>&amp;</span> Style</h2><p>Management System</p></div></div></div>
+    <div class="sidebar-user"><div class="user-avatar">MS</div><div class="user-info"><small>Staff</small><span>Maria Santos</span></div></div>
+    <div class="sidebar-nav">
+      <div class="nav-item"><span class="icon">📊</span> Dashboard</div>
+      <div class="nav-item active"><span class="icon">📋</span> Bookings History</div>
+      <div class="nav-item"><span class="icon">🏠</span> Cage Map</div>
+      <div class="nav-item"><span class="icon">👥</span> Customers &amp; Pets</div>
+      <div class="nav-item"><span class="icon">📈</span> Analytics</div>
+      <div class="nav-item"><span class="icon">⚙️</span> Settings</div>
+    </div>
+    <div class="sidebar-bottom"><div class="logout-item">🚪 Sign Out</div></div>
+  </nav>
+  <div class="main-content">
+    <div class="top-bar"><div class="date-chip">📅 Sunday, March 8, 2026</div><div class="notif-btn">🔔<div class="notif-dot"></div></div></div>
+    <div class="page-wrap">
+      <div class="page-header"><div><h1>Bookings History</h1><p>All grooming and boarding transactions — online bookings and walk-ins</p></div></div>
+
+      <!-- Today's Summary -->
+      <div style="background:white;border:1px solid var(--border);border-radius:16px;padding:20px;margin-bottom:20px;box-shadow:var(--shadow);">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+          <span style="width:10px;height:10px;border-radius:50%;background:var(--teal);display:inline-block;"></span>
+          <span style="font-family:'Lora',serif;font-size:16px;font-weight:700;color:var(--charcoal);">Today's Transactions</span>
+          <span style="font-size:12px;font-weight:700;color:white;background:var(--teal);border-radius:20px;padding:3px 12px;">March 8, 2026</span>
+          <span style="margin-left:auto;font-size:12px;color:var(--muted);">5 transactions today</span>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px;">
+          <div style="background:var(--teal-light);border:1.5px solid #FFD580;border-radius:10px;padding:12px 14px;"><div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin-bottom:3px;">Grooming</div><div style="font-size:24px;font-weight:700;color:var(--teal);">3</div></div>
+          <div style="background:var(--teal-light);border:1.5px solid #87C9C2;border-radius:10px;padding:12px 14px;"><div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin-bottom:3px;">Boarding</div><div style="font-size:24px;font-weight:700;color:var(--teal-dark);">2</div></div>
+          <div style="background:var(--warning-bg);border:1.5px solid var(--border);border-radius:10px;padding:12px 14px;"><div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin-bottom:3px;">Pending</div><div style="font-size:24px;font-weight:700;color:#F57F17;">1</div></div>
+          <div style="background:#F3E5F5;border:1.5px solid #CE93D8;border-radius:10px;padding:12px 14px;"><div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin-bottom:3px;">Revenue</div><div style="font-size:24px;font-weight:700;color:#6A1B9A;">₱2,450</div></div>
+        </div>
+        <!-- Transaction cards -->
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <div style="display:grid;grid-template-columns:3px 1fr;border:1px solid var(--border);border-radius:10px;overflow:hidden;">
+            <div style="background:var(--teal);"></div>
+            <div style="padding:11px 14px;">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;"><span style="font-family:monospace;font-size:11px;color:var(--mid);font-weight:700;">#BK-0094</span><span style="font-size:10px;font-weight:700;background:var(--teal-light);color:var(--teal);border:1px solid #87C9C2;border-radius:5px;padding:2px 7px;">✂ Grooming</span><span style="font-size:10px;color:var(--muted);">Booked 7:42 AM</span><div style="margin-left:auto;display:flex;gap:5px;"><span class="badge badge-confirmed">Confirmed</span><span class="badge badge-paid">Paid</span></div></div>
+              <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:8px;font-size:12px;"><div><span style="color:var(--muted);font-size:10px;display:block;text-transform:uppercase;letter-spacing:.4px;">Customer</span><strong>Ana Reyes</strong></div><div><span style="color:var(--muted);font-size:10px;display:block;text-transform:uppercase;letter-spacing:.4px;">Pet</span><strong>Bella</strong> <small style="color:var(--muted);">· Shih Tzu</small></div><div><span style="color:var(--muted);font-size:10px;display:block;text-transform:uppercase;letter-spacing:.4px;">Service</span><strong>Full Groom</strong></div><div><span style="color:var(--muted);font-size:10px;display:block;text-transform:uppercase;letter-spacing:.4px;">Groomer · Time</span><strong>Maria</strong> <small style="color:var(--muted);">· 8:00 AM</small></div></div>
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:3px 1fr;border:1px solid var(--border);border-radius:10px;overflow:hidden;">
+            <div style="background:var(--teal);"></div>
+            <div style="padding:11px 14px;">
+              <div style="display:flex;align-items:center;gap:8px;"><span style="font-family:monospace;font-size:11px;color:var(--mid);font-weight:700;">#BK-0095</span><span style="font-size:10px;font-weight:700;background:var(--teal-light);color:var(--teal);border:1px solid #87C9C2;border-radius:5px;padding:2px 7px;">✂ Grooming</span><span style="font-size:10px;color:var(--muted);">Walk-in</span><div style="margin-left:auto;display:flex;gap:5px;"><span class="badge badge-confirmed">Confirmed</span><span class="badge badge-paid">Paid</span></div></div>
+              <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:8px;font-size:12px;"><div><span style="color:var(--muted);font-size:10px;display:block;text-transform:uppercase;">Customer</span><strong>Carlo Santos</strong></div><div><span style="color:var(--muted);font-size:10px;display:block;text-transform:uppercase;">Pet</span><strong>Latte</strong><small style="color:var(--muted);"> · Beagle</small></div><div><span style="color:var(--muted);font-size:10px;display:block;text-transform:uppercase;">Service</span><strong>Bath &amp; Dry</strong></div><div><span style="color:var(--muted);font-size:10px;display:block;text-transform:uppercase;">Time</span><strong>9:00 AM</strong></div></div>
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:3px 1fr;border:1px solid var(--border);border-radius:10px;overflow:hidden;">
+            <div style="background:var(--teal);"></div>
+            <div style="padding:11px 14px;">
+              <div style="display:flex;align-items:center;gap:8px;"><span style="font-family:monospace;font-size:11px;color:var(--mid);font-weight:700;">#BK-0087</span><span style="font-size:10px;font-weight:700;background:var(--teal-light);color:var(--teal-dark);border:1px solid #87C9C2;border-radius:5px;padding:2px 7px;">🏠 Boarding</span><span style="font-size:10px;color:var(--muted);">Booked Mar 5</span><div style="margin-left:auto;display:flex;gap:5px;"><span class="badge badge-confirmed">Confirmed</span><span class="badge badge-downpaid">Downpaid</span></div></div>
+              <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:8px;font-size:12px;"><div><span style="color:var(--muted);font-size:10px;display:block;text-transform:uppercase;">Customer</span><strong>Ana Reyes</strong></div><div><span style="color:var(--muted);font-size:10px;display:block;text-transform:uppercase;">Pet</span><strong>Bella</strong><small style="color:var(--muted);"> · Shih Tzu</small></div><div><span style="color:var(--muted);font-size:10px;display:block;text-transform:uppercase;">Check-In / Out</span><strong>Mar 8</strong><small style="color:var(--muted);"> → Mar 9</small></div><div><span style="color:var(--muted);font-size:10px;display:block;text-transform:uppercase;">Cage · Amount</span><strong>C-01</strong><small style="color:var(--muted);"> · ₱350</small></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- All Transactions Table -->
+      <div class="card" style="overflow:hidden;padding:0;">
+        <div style="padding:18px 20px 12px;display:flex;align-items:center;justify-content:space-between;">
+          <span style="font-family:'Lora',serif;font-size:16px;font-weight:600;color:var(--charcoal);">All Transactions</span>
+          <div style="display:flex;gap:8px;">
+            <input type="text" placeholder="Search by ID, customer, or pet…" style="padding:8px 12px;border:1.5px solid var(--border);border-radius:8px;font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;width:220px;"/>
+            <select style="padding:8px 11px;border:1.5px solid var(--border);border-radius:8px;font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;"><option>Service: All</option><option>Grooming</option><option>Boarding</option></select>
+            <select style="padding:8px 11px;border:1.5px solid var(--border);border-radius:8px;font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;"><option>Status: All</option><option>Confirmed</option><option>Pending</option><option>Completed</option></select>
+          </div>
+        </div>
+        <table>
+          <thead><tr><th>Booking ID</th><th>Date &amp; Time</th><th>Customer</th><th>Pet</th><th>Service</th><th>Groomer</th><th>Status</th><th>Payment</th><th>Actions</th></tr></thead>
+          <tbody>
+            <tr><td><span style="font-family:monospace;font-size:11px;color:var(--mid);font-weight:600;">#BK-0099</span></td><td>Mar 15, 2026<br><small style="color:var(--muted);">9:00 AM</small></td><td><strong>Ana Reyes</strong></td><td>Mochi<br><small style="color:var(--muted);">Persian Cat · Medium</small></td><td><span style="font-size:11px;color:var(--teal);font-weight:600;">✂ Grooming</span><br><small style="color:var(--muted);">Full Grooming</small></td><td>Liza Reyes</td><td><span class="badge badge-confirmed">Confirmed</span></td><td><span class="badge badge-downpaid">Downpaid</span></td><td><button style="width:26px;height:26px;border-radius:5px;background:var(--border);border:none;font-size:12px;">👁️</button></td></tr>
+            <tr><td><span style="font-family:monospace;font-size:11px;color:var(--mid);font-weight:600;">#BK-0090</span></td><td>Mar 7, 2026<br><small style="color:var(--muted);">8:00 AM</small></td><td><strong>Ana Reyes</strong></td><td>Bella<br><small style="color:var(--muted);">Shih Tzu · Small</small></td><td><span style="font-size:11px;color:var(--teal);font-weight:600;">✂ Grooming</span><br><small style="color:var(--muted);">Full Groom</small></td><td>Maria Santos</td><td><span class="badge badge-completed">Completed</span></td><td><span class="badge badge-paid">Paid</span></td><td><button style="width:26px;height:26px;border-radius:5px;background:var(--border);border:none;font-size:12px;">👁️</button></td></tr>
+            <tr><td><span style="font-family:monospace;font-size:11px;color:var(--mid);font-weight:600;">#BK-0089</span></td><td>Mar 7, 2026<br><small style="color:var(--muted);">10:00 AM</small></td><td><strong>Trish Gomez</strong></td><td>Luna<br><small style="color:var(--muted);">Chihuahua · Small</small></td><td><span style="font-size:11px;color:var(--teal);font-weight:600;">✂ Grooming</span><br><small style="color:var(--muted);">Nail Trim</small></td><td>Liza Reyes</td><td><span class="badge badge-completed">Completed</span></td><td><span class="badge badge-paid">Paid</span></td><td><button style="width:26px;height:26px;border-radius:5px;background:var(--border);border:none;font-size:12px;">👁️</button></td></tr>
+            <tr><td><span style="font-family:monospace;font-size:11px;color:var(--mid);font-weight:600;">#BK-0085</span></td><td>Mar 5, 2026<br><small style="color:var(--muted);">9:00 AM check-in</small></td><td><strong>Mike Lim</strong></td><td>Doggo<br><small style="color:var(--muted);">Golden Ret. · Large</small></td><td><span style="font-size:11px;color:var(--teal-dark);font-weight:600;">🏠 Boarding</span><br><small style="color:var(--muted);">C-07,C-08 · Mar 5→9</small></td><td><span style="color:var(--muted);font-size:11px;">N/A</span></td><td><span class="badge badge-completed">Completed</span></td><td><span class="badge badge-paid">Paid</span></td><td><button style="width:26px;height:26px;border-radius:5px;background:var(--border);border:none;font-size:12px;">👁️</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

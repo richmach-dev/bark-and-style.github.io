@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=1280"/>
+<title>Bark & Style — 07 Settings</title>
+<link rel="stylesheet" href="shared.css"/>
+</head>
+<body>
+<div class="app-layout">
+  <nav class="sidebar">
+    <div class="sidebar-brand"><div class="sidebar-brand-inner"><div class="brand-icon">🐾</div><div><h2>Bark <span>&amp;</span> Style</h2><p>Management System</p></div></div></div>
+    <div class="sidebar-user"><div class="user-avatar">MS</div><div class="user-info"><small>Staff</small><span>Maria Santos</span></div></div>
+    <div class="sidebar-nav">
+      <div class="nav-item"><span class="icon">📊</span> Dashboard</div>
+      <div class="nav-item"><span class="icon">📋</span> Bookings History</div>
+      <div class="nav-item"><span class="icon">🏠</span> Cage Map</div>
+      <div class="nav-item"><span class="icon">👥</span> Customers &amp; Pets</div>
+      <div class="nav-item"><span class="icon">📈</span> Analytics</div>
+      <div class="nav-item active"><span class="icon">⚙️</span> Settings</div>
+    </div>
+    <div class="sidebar-bottom"><div class="logout-item">🚪 Sign Out</div></div>
+  </nav>
+  <div class="main-content">
+    <div class="top-bar"><div class="date-chip">📅 Sunday, March 8, 2026</div><div class="notif-btn">🔔</div></div>
+    <div class="page-wrap">
+      <div class="page-header"><div><h1>Settings</h1><p>Manage your staff account and system preferences</p></div></div>
+
+      <div class="profile-header">
+        <div class="profile-avatar">MS</div>
+        <div style="flex:1;">
+          <h2 style="font-family:'Lora',serif;font-size:22px;font-weight:700;">Maria Santos</h2>
+          <p style="color:var(--muted);font-size:13px;margin-top:4px;">+63 917 000 1111 · maria@barkandstyle.com</p>
+          <span class="badge badge-inprogress" style="margin-top:7px;display:inline-flex;">Staff — Groomer 1</span>
+        </div>
+        <button style="width:40px;height:40px;border-radius:50%;background:var(--border);border:none;font-size:18px;display:flex;align-items:center;justify-content:center;">🔒</button>
+      </div>
+
+      <div class="two-col">
+        <div class="card">
+          <div class="card-title">Account Information
+            <button style="width:32px;height:32px;border-radius:8px;background:var(--border);border:none;font-size:15px;display:flex;align-items:center;justify-content:center;">✏️</button>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:14px;font-size:13px;">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+              <div><div style="font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px;">First Name</div><div style="font-weight:500;">Maria</div></div>
+              <div><div style="font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px;">Last Name</div><div style="font-weight:500;">Santos</div></div>
+            </div>
+            <div><div style="font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px;">Email Address</div><div style="font-weight:500;">maria@barkandstyle.com</div></div>
+            <div><div style="font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px;">Mobile Number</div><div style="font-weight:500;">+63 917 000 1111</div></div>
+            <div><div style="font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px;">Role</div><div style="font-weight:500;">Groomer 1</div></div>
+            <div style="border-top:1px solid var(--border);padding-top:14px;">
+              <div style="font-size:13px;font-weight:600;margin-bottom:8px;color:var(--charcoal);">Change Password</div>
+              <div class="form-group"><label>Current Password</label><input type="password" placeholder="Enter current password"/></div>
+              <div class="form-group"><label>New Password</label><input type="password" placeholder="Create new password"/></div>
+              <div class="form-group"><label>Confirm New Password</label><input type="password" placeholder="Repeat new password"/></div>
+              <div style="display:flex;gap:8px;"><button class="btn btn-outline" style="flex:1;">Cancel</button><button class="btn btn-dark" style="flex:1;">Update Password</button></div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:16px;">
+          <div class="card">
+            <div class="card-title">System Preferences</div>
+            <div style="display:flex;flex-direction:column;gap:16px;">
+              <div>
+                <div style="font-size:13px;font-weight:600;margin-bottom:4px;color:var(--charcoal);">SMS Notifications</div>
+                <div style="font-size:12px;color:var(--muted);margin-bottom:8px;">Send automatic reminders to customers before their booking.</div>
+                <label style="display:flex;align-items:center;gap:10px;cursor:pointer;"><input type="checkbox" checked style="width:16px;height:16px;accent-color:var(--teal);"/><span style="font-size:13px;">Send SMS reminder 24 hrs before check-in</span></label>
+              </div>
+              <div style="border-top:1px solid var(--border);padding-top:14px;">
+                <div style="font-size:13px;font-weight:600;margin-bottom:4px;color:var(--charcoal);">Auto-cancel Unpaid Bookings</div>
+                <div style="font-size:12px;color:var(--muted);margin-bottom:8px;">Auto-cancel reservations that remain unpaid after the grace period.</div>
+                <label style="display:flex;align-items:center;gap:10px;cursor:pointer;"><input type="checkbox" checked style="width:16px;height:16px;accent-color:var(--teal);"/><span style="font-size:13px;">Auto-cancel after 10-minute grace period</span></label>
+              </div>
+              <div style="border-top:1px solid var(--border);padding-top:14px;">
+                <div style="font-size:13px;font-weight:600;margin-bottom:4px;color:var(--charcoal);">Business Hours</div>
+                <div style="font-size:12px;color:var(--muted);margin-bottom:8px;">Only the owner can change business hours.</div>
+                <div style="font-size:13px;background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:10px 14px;color:var(--mid);">Mon–Sun: <strong>8:00 AM – 4:00 PM</strong></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">Grooming Slot Capacity</div>
+            <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;">
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border-light);"><div><div style="font-weight:600;">Max slots per groomer / day</div><div style="font-size:12px;color:var(--muted);">Limits daily booking capacity per groomer</div></div><select style="padding:7px 10px;border:1.5px solid var(--border);border-radius:8px;font-family:'Plus Jakarta Sans',sans-serif;font-size:13px;background:white;"><option>6 slots</option><option>7 slots</option><option selected>8 slots</option></select></div>
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 0;"><div><div style="font-weight:600;">Total boarding cages</div><div style="font-size:12px;color:var(--muted);">Current facility capacity</div></div><div style="font-size:16px;font-weight:700;color:var(--teal);">15 cages</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

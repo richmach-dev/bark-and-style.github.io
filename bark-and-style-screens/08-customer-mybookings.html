@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=1280"/>
+<title>Bark & Style — 08 My Bookings</title>
+<link rel="stylesheet" href="shared.css"/>
+</head>
+<body>
+<div class="app-layout">
+  <nav class="sidebar">
+    <div class="sidebar-brand"><div class="sidebar-brand-inner"><div class="brand-icon">🐾</div><div><h2>Bark <span>&amp;</span> Style</h2><p>Management System</p></div></div></div>
+    <div class="sidebar-user"><div class="user-avatar">JD</div><div class="user-info"><small>Customer</small><span>Juan dela Cruz</span></div></div>
+    <div class="sidebar-nav">
+      <div class="nav-section-label">Bookings</div>
+      <div class="nav-item"><span class="icon">➕</span> Book Now</div>
+      <div class="nav-item active"><span class="icon">📅</span> My Bookings</div>
+      <div class="nav-section-label">Account</div>
+      <div class="nav-item"><span class="icon">👤</span> My Profile &amp; Pets</div>
+    </div>
+    <div class="sidebar-bottom"><div class="logout-item">🚪 Sign Out</div></div>
+  </nav>
+  <div class="main-content">
+    <div class="page-wrap" style="padding-top:28px;">
+      <div class="page-header">
+        <div><h1>My Bookings</h1><p>Your grooming appointments and boarding reservations</p></div>
+        <button class="btn btn-teal">+ Book Now</button>
+      </div>
+
+      <div class="stats-grid stats-3">
+        <div class="stat-card c-teal"><div class="stat-label">Total Bookings</div><div class="stat-value">3</div><div class="stat-sub">all time</div></div>
+        <div class="stat-card c-dark"><div class="stat-label">Upcoming</div><div class="stat-value">1</div><div class="stat-sub">in progress</div></div>
+        <div class="stat-card c-amber"><div class="stat-label">Pets Registered</div><div class="stat-value">2</div><div class="stat-sub">Bella &amp; Mochi</div></div>
+      </div>
+
+      <!-- Upcoming booking highlight -->
+      <div style="background:linear-gradient(135deg,var(--teal),var(--teal-dark));border-radius:var(--r-lg);padding:20px 24px;margin-bottom:20px;color:white;display:flex;align-items:center;gap:20px;">
+        <div style="font-size:36px;">✂️</div>
+        <div style="flex:1;">
+          <div style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;opacity:.75;margin-bottom:4px;">Next Appointment</div>
+          <div style="font-family:'Lora',serif;font-size:20px;font-weight:700;">Full Grooming — Bella</div>
+          <div style="font-size:13px;opacity:.85;margin-top:4px;">March 10, 2026 at 10:00 AM · Maria Santos · Shih Tzu (Small)</div>
+        </div>
+        <div style="text-align:right;">
+          <div style="font-size:11px;opacity:.7;margin-bottom:4px;">Booking ID</div>
+          <div style="font-family:monospace;font-size:14px;font-weight:700;">#BK-2026-0091</div>
+          <div style="margin-top:8px;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.3);border-radius:8px;padding:5px 14px;font-size:12px;font-weight:600;display:inline-block;">Balance: ₱175 on day of service</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Booking History</div>
+        <table>
+          <thead>
+            <tr><th>Booking ID</th><th>Service</th><th>Pet</th><th>Date &amp; Time</th><th>Groomer</th><th>Status</th><th>Payment</th><th>Action</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><small style="font-family:monospace;color:var(--muted);">#BK-2026-0091</small></td>
+              <td>✂️ Full Grooming<br><small style="color:var(--muted);">Grooming</small></td>
+              <td>🐕 Bella<br><small style="color:var(--muted);">Shih Tzu · Small</small></td>
+              <td>Mar 10, 2026<br><small style="color:var(--muted);">10:00 AM</small></td>
+              <td>Maria Santos</td>
+              <td><span class="badge badge-confirmed">Confirmed</span></td>
+              <td><span class="badge badge-downpaid">Downpaid</span></td>
+              <td><button style="width:26px;height:26px;border-radius:5px;background:var(--border);border:none;font-size:12px;">👁️</button></td>
+            </tr>
+            <tr>
+              <td><small style="font-family:monospace;color:var(--muted);">#BK-2026-0087</small></td>
+              <td>✂️ Full Grooming<br><small style="color:var(--muted);">Grooming</small></td>
+              <td>🐕 Bella<br><small style="color:var(--muted);">Shih Tzu · Small</small></td>
+              <td>Mar 7, 2026<br><small style="color:var(--muted);">8:00 AM</small></td>
+              <td>Maria Santos</td>
+              <td><span class="badge badge-inprogress">In Progress</span></td>
+              <td><span class="badge badge-paid">Paid</span></td>
+              <td><button style="width:26px;height:26px;border-radius:5px;background:var(--border);border:none;font-size:12px;">👁️</button></td>
+            </tr>
+            <tr>
+              <td><small style="font-family:monospace;color:var(--muted);">#BK-2026-0079</small></td>
+              <td>✂️ Full Grooming<br><small style="color:var(--muted);">Grooming</small></td>
+              <td>🐕 Bella<br><small style="color:var(--muted);">Shih Tzu · Small</small></td>
+              <td>Feb 22, 2026<br><small style="color:var(--muted);">10:00 AM</small></td>
+              <td>Maria Santos</td>
+              <td><span class="badge badge-completed">Completed</span></td>
+              <td><span class="badge badge-paid">Paid</span></td>
+              <td><button style="width:26px;height:26px;border-radius:5px;background:var(--border);border:none;font-size:12px;">👁️</button></td>
+            </tr>
+            <tr>
+              <td><small style="font-family:monospace;color:var(--muted);">#BK-2026-0071</small></td>
+              <td>🛁 Bath &amp; Dry<br><small style="color:var(--muted);">Grooming</small></td>
+              <td>🐈 Mochi<br><small style="color:var(--muted);">Persian Cat · Medium</small></td>
+              <td>Feb 10, 2026<br><small style="color:var(--muted);">1:00 PM</small></td>
+              <td>Liza Reyes</td>
+              <td><span class="badge badge-completed">Completed</span></td>
+              <td><span class="badge badge-paid">Paid</span></td>
+              <td><button style="width:26px;height:26px;border-radius:5px;background:var(--border);border:none;font-size:12px;">👁️</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

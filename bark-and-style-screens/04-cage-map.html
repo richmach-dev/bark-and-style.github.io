@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=1280"/>
+<title>Bark & Style — 04 Cage Map</title>
+<link rel="stylesheet" href="shared.css"/>
+</head>
+<body>
+<div class="app-layout">
+  <nav class="sidebar">
+    <div class="sidebar-brand"><div class="sidebar-brand-inner"><div class="brand-icon">🐾</div><div><h2>Bark <span>&amp;</span> Style</h2><p>Management System</p></div></div></div>
+    <div class="sidebar-user"><div class="user-avatar">MS</div><div class="user-info"><small>Staff</small><span>Maria Santos</span></div></div>
+    <div class="sidebar-nav">
+      <div class="nav-item"><span class="icon">📊</span> Dashboard</div>
+      <div class="nav-item"><span class="icon">📋</span> Bookings History</div>
+      <div class="nav-item active"><span class="icon">🏠</span> Cage Map</div>
+      <div class="nav-item"><span class="icon">👥</span> Customers &amp; Pets</div>
+      <div class="nav-item"><span class="icon">📈</span> Analytics</div>
+      <div class="nav-item"><span class="icon">⚙️</span> Settings</div>
+    </div>
+    <div class="sidebar-bottom"><div class="logout-item">🚪 Sign Out</div></div>
+  </nav>
+  <div class="main-content">
+    <div class="top-bar"><div class="date-chip">📅 Sunday, March 8, 2026</div><div class="notif-btn">🔔<div class="notif-dot"></div></div></div>
+    <div class="page-wrap">
+      <div class="page-header"><div><h1>Boarding</h1><p>Cage occupancy and upcoming reservations</p></div><button class="btn btn-teal">+ New Boarding</button></div>
+
+      <div class="stats-grid stats-3" style="margin-bottom:18px;">
+        <div class="stat-card c-teal-light"><div class="stat-label">Available Today</div><div class="stat-value" style="color:var(--teal-dark);">4</div><div class="stat-sub">cages free right now</div></div>
+        <div class="stat-card c-amber-light"><div class="stat-label">Currently Occupied</div><div class="stat-value" style="color:var(--amber-dark);">9</div><div class="stat-sub">single + double pairs</div></div>
+        <div class="stat-card c-blue-light"><div class="stat-label">Upcoming (7 days)</div><div class="stat-value" style="color:#1565C0;">3</div><div class="stat-sub">reservations incoming</div></div>
+      </div>
+
+      <!-- View Tabs -->
+      <div style="display:flex;background:var(--border);border-radius:10px;padding:3px;margin-bottom:16px;width:fit-content;">
+        <div style="padding:7px 18px;border-radius:8px;font-size:12px;font-weight:600;background:var(--surface);color:var(--charcoal);box-shadow:var(--shadow);">🏠 Cage Map (Today)</div>
+        <div style="padding:7px 18px;border-radius:8px;font-size:12px;font-weight:600;color:var(--muted);">📅 Boarding Calendar</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">
+          Today's Cage Status — Mar 8, 2026
+          <div style="display:flex;gap:8px;font-size:11px;font-weight:600;">
+            <span style="color:var(--teal-dark);background:var(--teal-light);padding:3px 8px;border-radius:6px;">■ Free</span>
+            <span style="color:var(--amber-dark);background:var(--amber-light);padding:3px 8px;border-radius:6px;">■ Occupied</span>
+            <span style="color:#880E4F;background:#FCE4EC;padding:3px 8px;border-radius:6px;">■ Large/Double</span>
+          </div>
+        </div>
+        <p style="font-size:12px;color:var(--muted);margin-bottom:14px;">Click any cage to view details. Large pets occupy 2 adjacent cages.</p>
+        <div class="cage-grid">
+          <div class="cage cage-occupied"><div class="cage-num">C-01</div><div class="cage-icon">🐕</div><div class="cage-name">Bella</div><div class="cage-days">Until Mar 8</div></div>
+          <div class="cage cage-occupied"><div class="cage-num">C-02</div><div class="cage-icon">🐈</div><div class="cage-name">Mochi</div><div class="cage-days">Until Mar 10</div></div>
+          <div class="cage cage-occupied"><div class="cage-num">C-03</div><div class="cage-icon">🐕</div><div class="cage-name">Coco</div><div class="cage-days">Until Mar 9</div></div>
+          <div class="cage cage-free"><div class="cage-num">C-04</div><div class="cage-icon">🔓</div><div class="cage-name">Available</div></div>
+          <div class="cage cage-free"><div class="cage-num">C-05</div><div class="cage-icon">🔓</div><div class="cage-name">Available</div></div>
+          <div class="cage cage-occupied"><div class="cage-num">C-06</div><div class="cage-icon">🐕</div><div class="cage-name">Lucky</div><div class="cage-days">Until Mar 11</div></div>
+          <div class="cage cage-double"><div class="cage-large-badge">LARGE</div><div class="cage-num">C-07</div><div class="cage-icon">🐕</div><div class="cage-name">Doggo</div><div class="cage-days">Until Mar 9</div></div>
+          <div class="cage cage-double"><div class="cage-large-badge">+PAIR</div><div class="cage-num">C-08</div><div class="cage-icon">🔗</div><div class="cage-name">Doggo (ext.)</div><div class="cage-days">Until Mar 9</div></div>
+          <div class="cage cage-occupied"><div class="cage-num">C-09</div><div class="cage-icon">🐈</div><div class="cage-name">Snow</div><div class="cage-days">Until Mar 8</div></div>
+          <div class="cage cage-free"><div class="cage-num">C-10</div><div class="cage-icon">🔓</div><div class="cage-name">Available</div></div>
+          <div class="cage cage-occupied"><div class="cage-num">C-11</div><div class="cage-icon">🐕</div><div class="cage-name">Rex</div><div class="cage-days">Until Mar 12</div></div>
+          <div class="cage cage-occupied"><div class="cage-num">C-12</div><div class="cage-icon">🐕</div><div class="cage-name">Bruno</div><div class="cage-days">Until Mar 8</div></div>
+          <div class="cage cage-double"><div class="cage-large-badge">LARGE</div><div class="cage-num">C-13</div><div class="cage-icon">🐕</div><div class="cage-name">Goliath</div><div class="cage-days">Until Mar 14</div></div>
+          <div class="cage cage-double"><div class="cage-large-badge">+PAIR</div><div class="cage-num">C-14</div><div class="cage-icon">🔗</div><div class="cage-name">Goliath (ext.)</div><div class="cage-days">Until Mar 14</div></div>
+          <div class="cage cage-free"><div class="cage-num">C-15</div><div class="cage-icon">🔓</div><div class="cage-name">Available</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
